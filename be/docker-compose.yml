@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mssql_db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql_db
+    hostname: mssql_db
+    ports:
+      - "1433:1433"
+    environment:
+      MSSQL_SA_PASSWORD: mssqlPassword1
+      ACCEPT_EULA: Y
+      MSSQL_PID: Express
+
+  lc_server:
+    image: lc_server
+    build: .
+    container_name: lc_server
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mssql_db

@@ -1,0 +1,57 @@
+.loginContainer {
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+/* LEFT HAND SIDE */
+.leftSide {
+    width: 40%;
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.leaderLogo {
+    background: transparent;
+    width: 60%;
+}
+.buttonSection {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.loginButton, .registerButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+/* RIGHT HAND SIDE */
+.rightSide {
+    width: 60%;
+    right: 0;
+    background-color: #e6edf3;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+

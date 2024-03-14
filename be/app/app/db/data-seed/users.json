@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "email": "user@email.com",
+        "fullName": "user",
+        "password": "password",
+        "crm_platform_accouint_id": 123
+    }
+]

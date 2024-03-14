@@ -1,0 +1,35 @@
+.loginForm {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: PT Mono, monospace;
+}
+.loginForm label {
+    display:block;
+    font-weight: bold;
+    text-align: left;
+    font-family: PT Mono, monospace;
+}
+
+.loginForm input {
+    display: block;
+    margin-bottom: 10px;
+    height: 56px;
+    width: 352px;
+    font-family: Cutive Mono, monospace;
+    border-radius: 8px;
+    border: 1.4px solid;
+    box-shadow: 1px 2px 20px rgba(169,198,217,0.29457423);
+}
+
+.loginForm input:hover {
+    background-color: rgba(169,198,217,0.36457423);
+}
+
+.submitButton {
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

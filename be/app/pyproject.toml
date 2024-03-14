@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["BaroPhan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.8"
+fastapi = "^0.95.2"
+sqlalchemy = "^2.0.13"
+tenacity = "^8.2.2"
+psycopg2-binary = "^2.9.6"
+uvicorn = "^0.22.0"
+python-dotenv = "^1.0.0"
+pyodbc = "^4.0.39"
+alembic = "^1.11.1"
+requests = "^2.31.0"
+pyjwt = "^2.7.0"
+passlib = "^1.7.4"
+bcrypt="^3.2.0"
+
+[tool.poetry.scripts]
+start = "app.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
